@@ -8,7 +8,7 @@ on:
 jobs:
   publish:
     name: Publish for ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-ss
     strategy:
       matrix:
         include:
@@ -16,8 +16,8 @@ jobs:
             asset_name: mergestat-linux-amd64
           # - os: windows-latest
           #   asset_name: mergestat-windows-amd64
-          - os: macos-latest
-            asset_name: mergestat-macos-amd64
+          #- os: macos-latest
+          #  asset_name: mergestat-macos-amd64
 
     steps:
     - name: Set up Go 1.19
