@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-ss
+    runs-on: arc-ss-testkhong
     steps:
     - name: Set up Go 1.19
       uses: actions/setup-go@v3
