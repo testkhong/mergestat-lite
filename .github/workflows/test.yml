@@ -2,9 +2,8 @@ name: Tests
 on: [push, pull_request]
 jobs:
   build:
-    name: Build for ${{ matrix.os }}
+    name: Build
     runs-on: ubuntu-ss
-
     steps:
     - name: Set up Go 1.19
       uses: actions/setup-go@v3
