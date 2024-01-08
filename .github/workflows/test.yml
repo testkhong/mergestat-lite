@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-ss
             asset_name: mergestat-linux-amd64
           #- os: macos-latest
           #  asset_name: mergestat-macos-amd64
